@@ -7,7 +7,7 @@ Encontre aqui o filme pra sua diversão.
 ## Desenvolvimento👨🏽
 Neste projeto utilizei o UIKit na linguagem Swift. 
 
-Foi um projeto em que tive o foco de colocar em prática o que aprendi sobre autoLayout e pude também implementar e treinar o uso de collectinView, ScrollView e navegacao entre telas
+Foi um projeto em que tive como foco colocar em prática o que aprendi sobre autoLayout e pude também implementar e treinar o uso de collectinView, ScrollView e navegação entre telas
 
 ## Imagens 📸  
 
