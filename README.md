@@ -1,4 +1,4 @@
-# EncontreAqui 📌
+# Encontre Aqui 📌
 
 ## O projeto 📁
 Um catálogo de filmes em que você pode encontrar aquele filme que tanto procura e saber informações diversas desde a avaliação, ano de lançamento e descrição sobre o filme. 
