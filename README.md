@@ -1,16 +1,4 @@
 # Encontre Aqui 📌
-
-## O projeto 📁
-Um catálogo de filmes em que você pode encontrar aquele filme que tanto procura e saber informações diversas desde a avaliação, ano de lançamento e descrição sobre o filme. 
-Encontre aqui o filme pra sua diversão.
-
-## Desenvolvimento👨🏽
-Neste projeto utilizei o UIKit na linguagem Swift. 
-
-Foi um projeto em que tive como foco colocar em prática o que aprendi sobre autoLayout e pude também implementar e treinar o uso de collectinView, ScrollView e navegação entre telas
-
-## Imagens 📸  
-
 <div align = "center">
  
   LaunchScreen | Tela Featured | 
@@ -25,6 +13,16 @@ Foi um projeto em que tive como foco colocar em prática o que aprendi sobre aut
 <img width="620" alt="esco" src="https://user-images.githubusercontent.com/74778769/182231312-6ddc2f75-a3f6-4024-9950-990a2a01f107.png">|
 
 </div>
+
+## O projeto 📁
+Um catálogo de filmes em que você pode encontrar aquele filme que tanto procura e saber informações diversas desde a avaliação, ano de lançamento e descrição sobre o filme. 
+Encontre aqui o filme pra sua diversão.
+
+## Desenvolvimento👨🏽
+Neste projeto utilizei o UIKit na linguagem Swift. 
+
+Foi um projeto em que tive como foco colocar em prática o que aprendi sobre autoLayout e pude também implementar e treinar o uso de collectinView, ScrollView e navegação entre telas
+
 
 ## Como utiliza? 🛠
 - Baixe o projeto atual
