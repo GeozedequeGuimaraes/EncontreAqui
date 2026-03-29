@@ -1,6 +1,6 @@
 <div align="center">
 
-# Encontre Aqui 📌🎬
+# Encontre Aqui
 
 ### App iOS de Catálogo de Filmes • Swift + UIKit
 
@@ -12,15 +12,15 @@
 
 ---
 
-## 📖 Sobre o Projeto
+## Sobre o Projeto
 
 **Encontre Aqui** é um catálogo de filmes para iOS onde você pode descobrir aquele filme que tanto procura, com informações como avaliação, ano de lançamento e descrição completa.
 
-> Encontre aqui o filme pra sua próxima sessão de cinema! 🍿
+> Encontre aqui o filme pra sua próxima sessão de cinema!
 
 ---
 
-## 📸 Screenshots
+## Screenshots
 
 <div align="center">
 
@@ -36,32 +36,32 @@
 
 ---
 
-## 🛠 Desenvolvimento
+## Tecnologias
 
-Construído com **Swift + UIKit**, com foco em:
-
-- 📐 **AutoLayout** — layouts responsivos e adaptáveis
-- 🗂 **CollectionView** — exibição do catálogo de filmes
-- 📜 **ScrollView** — navegação fluida pelo conteúdo
-- 🧭 **Navegação entre telas** — fluxo de detalhe do filme
-- 🍎 **UIKit** — componentes nativos iOS
+- **Swift** — linguagem principal do desenvolvimento
+- **UIKit** — componentes nativos iOS
+- **AutoLayout** — layouts responsivos e adaptáveis
+- **CollectionView** — exibição do catálogo de filmes
+- **ScrollView** — navegação fluida pelo conteúdo
+- **Xcode** — ambiente de desenvolvimento
 
 ---
 
-## 🚀 Como Executar
+## Como Executar
 
 1. Clone ou baixe este repositório
 2. Abra o projeto no **Xcode**
 3. Selecione um simulador ou dispositivo físico
-4. Pressione ▶️ ou **Cmd + R** para rodar
+4. Pressione **Cmd + R** para rodar
 
 ---
 
-## 👤 Autor
+## Autor
 
 <div align="center">
 
 **Geozedeque Guimarães**
+
 Estudante de Ciência da Computação — CIn-UFPE
 
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/GeozedequeGuimaraes)
