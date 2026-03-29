@@ -15,6 +15,8 @@ class FeaturedViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.navigationBar.layoutMargins.left = 20
+
         popularCollectionView.dataSource = self
         popularCollectionView.delegate = self
 

@@ -31,6 +31,18 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             )
 
             tabBarController.viewControllers?.append(genresNav)
+
+            // Unselected tab icons: white with opacity so they're visible on dark background
+            let unselectedColor = UIColor(white: 1, alpha: 0.55)
+            let appearance = UITabBarAppearance()
+            appearance.configureWithOpaqueBackground()
+            appearance.backgroundColor = UIColor(red: 0.259, green: 0.290, blue: 0.404, alpha: 1)
+            appearance.stackedLayoutAppearance.normal.iconColor = unselectedColor
+            appearance.stackedLayoutAppearance.normal.titleTextAttributes = [.foregroundColor: unselectedColor]
+            appearance.stackedLayoutAppearance.selected.iconColor = UIColor(red: 0.953, green: 0.694, blue: 0.286, alpha: 1)
+            appearance.stackedLayoutAppearance.selected.titleTextAttributes = [.foregroundColor: UIColor(red: 0.953, green: 0.694, blue: 0.286, alpha: 1)]
+            tabBarController.tabBar.standardAppearance = appearance
+            tabBarController.tabBar.scrollEdgeAppearance = appearance
         }
     }
 
