@@ -30,18 +30,6 @@
 
 ---
 
-## Screenshots
-
-<div align="center">
-
-| Catalogo | Ver Todos | Detalhes | Generos |
-|:---:|:---:|:---:|:---:|
-| <img src="Screenshots/home.png" width="180"> | <img src="Screenshots/seeall.png" width="180"> | <img src="Screenshots/details.png" width="180"> | <img src="Screenshots/genres.png" width="180"> |
-
-</div>
-
----
-
 ## Funcionalidades
 
 - **3 secoes de filmes** -- Popular, Now Playing e Upcoming com scroll horizontal
@@ -104,6 +92,18 @@ Encontre_Aqui/
 2. Abra o arquivo `Encontre_Aqui.xcodeproj` no Xcode
 3. Selecione um simulador ou dispositivo fisico (iOS 15.5+)
 4. Execute o projeto com `Cmd + R`
+
+---
+
+## Screenshots
+
+<div align="center">
+
+| Catalogo | Ver Todos | Detalhes | Generos |
+|:---:|:---:|:---:|:---:|
+| <img src="Screenshots/home.png" width="180"> | <img src="Screenshots/seeall.png" width="180"> | <img src="Screenshots/details.png" width="180"> | <img src="Screenshots/genres.png" width="180"> |
+
+</div>
 
 ---
 
