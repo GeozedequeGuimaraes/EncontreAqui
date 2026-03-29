@@ -2,7 +2,7 @@ import UIKit
 
 class UpcomingCollectionViewCell: UICollectionViewCell {
     
-    static let cellIdentifiaer = "upcomingCell"
+    static let cellIdentifier = "upcomingCell"
     
     @IBOutlet var image: UIImageView!
     @IBOutlet var titleLabel: UILabel!

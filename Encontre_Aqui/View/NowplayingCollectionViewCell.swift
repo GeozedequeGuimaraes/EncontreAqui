@@ -2,7 +2,7 @@ import UIKit
 
 class NowplayingCollectionViewCell: UICollectionViewCell {
     
-    static let cellIdentifiaer = "nowPlayingCell"
+    static let cellIdentifier = "nowPlayingCell"
     
     @IBOutlet var image: UIImageView!
     @IBOutlet var titleLabel: UILabel!

@@ -2,7 +2,7 @@ import UIKit
 
 class PopularCollectionViewCell: UICollectionViewCell{
     
-    static let cellIdentifiaer = "popularCell"
+    static let cellIdentifier = "popularCell"
     
     @IBOutlet var titleLabel: UILabel!
     @IBOutlet var imageView: UIImageView!

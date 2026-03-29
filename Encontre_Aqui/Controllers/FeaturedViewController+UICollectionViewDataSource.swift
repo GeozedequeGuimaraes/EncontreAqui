@@ -9,7 +9,7 @@ extension FeaturedViewController: UICollectionViewDataSource {
             return nowPlayingMovies.count
         }
         else if collectionView == self.upcomingCollectionView {
-            return nowPlayingMovies.count
+            return upcomingMovies.count
         }
         else {
             return 0
@@ -32,32 +32,35 @@ extension FeaturedViewController: UICollectionViewDataSource {
     }
     
     fileprivate func makePopularCell(_ indexPath: IndexPath) -> PopularCollectionViewCell {
-        let cell = popularCollectionView.dequeueReusableCell(withReuseIdentifier: PopularCollectionViewCell.cellIdentifiaer, for: indexPath) as? PopularCollectionViewCell
+        let cell = popularCollectionView.dequeueReusableCell(withReuseIdentifier: PopularCollectionViewCell.cellIdentifier, for: indexPath) as? PopularCollectionViewCell
         cell?.setup(title: popularMovies[indexPath.item].title, image: UIImage(named: popularMovies[indexPath.item].backdrop) ?? UIImage())
-        cell?.imageView.layer.cornerRadius = 8.0
-        
+        cell?.imageView.layer.cornerRadius = 12.0
+        cell?.imageView.clipsToBounds = true
+
         return cell ?? PopularCollectionViewCell()
     }
     
     fileprivate func makeNowPlayingCell(_ indexPath: IndexPath) -> NowplayingCollectionViewCell {
-        let cell = nowPlayingCollectionView.dequeueReusableCell(withReuseIdentifier: NowplayingCollectionViewCell.cellIdentifiaer, for: indexPath) as? NowplayingCollectionViewCell
+        let cell = nowPlayingCollectionView.dequeueReusableCell(withReuseIdentifier: NowplayingCollectionViewCell.cellIdentifier, for: indexPath) as? NowplayingCollectionViewCell
         let year: String = String(nowPlayingMovies[indexPath.item].releaseDate.prefix(4))
         
         cell?.setup(title: nowPlayingMovies[indexPath.item].title, imageView: UIImage(named: nowPlayingMovies[indexPath.item].poster) ?? UIImage(), data: year)
         
-        cell?.image.layer.cornerRadius = 4.0
-        
+        cell?.image.layer.cornerRadius = 8.0
+        cell?.image.clipsToBounds = true
+
         return cell ?? NowplayingCollectionViewCell()
     }
     
     fileprivate func makeUpcomingCell(_ indexPath: IndexPath) -> UpcomingCollectionViewCell {
-        let cell = upcomingCollectionView.dequeueReusableCell(withReuseIdentifier: UpcomingCollectionViewCell.cellIdentifiaer, for: indexPath) as? UpcomingCollectionViewCell
+        let cell = upcomingCollectionView.dequeueReusableCell(withReuseIdentifier: UpcomingCollectionViewCell.cellIdentifier, for: indexPath) as? UpcomingCollectionViewCell
         let year: String = String(upcomingMovies[indexPath.item].releaseDate.prefix(4))
          
         cell?.setup(title: upcomingMovies[indexPath.item].title, imageView: UIImage(named: upcomingMovies[indexPath.item].poster) ?? UIImage(), data: year)
         
-        cell?.image.layer.cornerRadius = 12.0
-        
+        cell?.image.layer.cornerRadius = 8.0
+        cell?.image.clipsToBounds = true
+
         return cell ?? UpcomingCollectionViewCell()
     }
 

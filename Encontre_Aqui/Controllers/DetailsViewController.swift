@@ -28,9 +28,13 @@ class DetailsViewController: UIViewController {
         self.backdropImage.image = UIImage(named: movie.backdrop)
         titleLabel.text = movie.title
         posterImage.image = UIImage(named: movie.poster)
-        ratingLabel.text = "Rating: \(movie.voteAverage)/10"
+        ratingLabel.text = "Rating: \(String(format: "%.1f", movie.voteAverage))/10"
+        genresLabel.text = movie.genres.joined(separator: ", ")
+        timeLabel.text = movie.releaseDate
         overviewLabel.text = movie.overview
-        
+
+        backdropImage.clipsToBounds = true
+        posterImage.clipsToBounds = true
     }
     
 }
