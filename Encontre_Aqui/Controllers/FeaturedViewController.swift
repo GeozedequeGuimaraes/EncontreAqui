@@ -28,13 +28,6 @@ class FeaturedViewController: UIViewController {
         seeAllNowPlayingButton.addTarget(self, action: #selector(seeAllNowPlayingTapped), for: .touchUpInside)
         seeAllUpcomingButton.addTarget(self, action: #selector(seeAllUpcomingTapped), for: .touchUpInside)
 
-        navigationItem.rightBarButtonItem = UIBarButtonItem(
-            image: UIImage(systemName: "film.stack"),
-            style: .plain,
-            target: self,
-            action: #selector(genresTapped)
-        )
-        navigationItem.rightBarButtonItem?.tintColor = .white
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -65,8 +58,4 @@ class FeaturedViewController: UIViewController {
         navigationController?.pushViewController(vc, animated: true)
     }
 
-    @objc private func genresTapped() {
-        let vc = GenresViewController()
-        navigationController?.pushViewController(vc, animated: true)
-    }
 }

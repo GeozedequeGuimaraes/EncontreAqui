@@ -8,8 +8,8 @@ class SeeAllViewController: UIViewController {
     private lazy var collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.minimumInteritemSpacing = 12
-        layout.minimumLineSpacing = 16
-        layout.sectionInset = UIEdgeInsets(top: 16, left: 16, bottom: 16, right: 16)
+        layout.minimumLineSpacing = 20
+        layout.sectionInset = UIEdgeInsets(top: 12, left: 16, bottom: 16, right: 16)
         let cv = UICollectionView(frame: .zero, collectionViewLayout: layout)
         cv.backgroundColor = UIColor(red: 0.357, green: 0.533, blue: 0.906, alpha: 1.0)
         cv.translatesAutoresizingMaskIntoConstraints = false
@@ -22,6 +22,7 @@ class SeeAllViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = sectionTitle
+        navigationItem.largeTitleDisplayMode = .never
         view.backgroundColor = UIColor(red: 0.357, green: 0.533, blue: 0.906, alpha: 1.0)
         view.addSubview(collectionView)
         NSLayoutConstraint.activate([
@@ -40,8 +41,7 @@ extension SeeAllViewController: UICollectionViewDataSource {
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SeeAllCell.identifier, for: indexPath) as! SeeAllCell
-        let movie = movies[indexPath.item]
-        cell.configure(with: movie)
+        cell.configure(with: movies[indexPath.item])
         return cell
     }
 }
