@@ -20,13 +20,23 @@
 
 ---
 
+## Demo
+
+<div align="center">
+
+<img src="Screenshots/demo.gif" width="300" alt="Demo do app">
+
+</div>
+
+---
+
 ## Screenshots
 
 <div align="center">
 
-| Catalogo | Generos | Ver Todos |
-|:---:|:---:|:---:|
-| <img src="Screenshots/home.png" width="220"> | <img src="Screenshots/genres.png" width="220"> | <img src="Screenshots/seeall.png" width="220"> |
+| Catalogo | Ver Todos | Detalhes | Generos |
+|:---:|:---:|:---:|:---:|
+| <img src="Screenshots/home.png" width="180"> | <img src="Screenshots/seeall.png" width="180"> | <img src="Screenshots/details.png" width="180"> | <img src="Screenshots/genres.png" width="180"> |
 
 </div>
 
