@@ -2,7 +2,7 @@
 
 # Encontre Aqui
 
-### Catalogo de filmes iOS com secoes de destaque, detalhes completos e design imersivo -- construido com Swift, UIKit e UICollectionView
+### Catalogo de filmes iOS com secoes de destaque, navegacao por genero e detalhes completos -- construido com Swift, UIKit e UICollectionView
 
 [![Swift](https://img.shields.io/badge/Swift-FA7343?style=for-the-badge&logo=swift&logoColor=white)](https://swift.org)
 [![UIKit](https://img.shields.io/badge/UIKit-0D96F6?style=for-the-badge&logo=apple&logoColor=white)](https://developer.apple.com/documentation/uikit)
@@ -14,7 +14,7 @@
 
 ## Sobre o Projeto
 
-**Encontre Aqui** e um catalogo de filmes para iOS com mais de 100 titulos organizados em secoes -- Popular, Now Playing e Upcoming. Cada filme possui poster, backdrop, sinopse, generos, data de lancamento e nota de avaliacao. A interface e construida com UICollectionView em scroll horizontal para cada secao e uma tela de detalhes completa ao tocar em qualquer filme.
+**Encontre Aqui** e um catalogo de filmes para iOS com mais de 100 titulos organizados em secoes -- Popular, Now Playing e Upcoming. O usuario pode navegar por genero, explorar todos os filmes de uma categoria e visualizar detalhes completos com poster, sinopse, avaliacao e generos.
 
 > Encontre aqui o filme pra sua proxima sessao de cinema!
 
@@ -24,9 +24,9 @@
 
 <div align="center">
 
-| Catalogo | Detalhes |
-|:---:|:---:|
-| <img src="Screenshots/home.png" width="280"> | <img width="280" alt="Detalhe do Filme" src="https://user-images.githubusercontent.com/74778769/182231312-6ddc2f75-a3f6-4024-9950-990a2a01f107.png"/> |
+| Catalogo | Generos | Ver Todos |
+|:---:|:---:|:---:|
+| <img src="Screenshots/home.png" width="220"> | <img src="Screenshots/genres.png" width="220"> | <img src="Screenshots/seeall.png" width="220"> |
 
 </div>
 
@@ -34,29 +34,28 @@
 
 ## Funcionalidades
 
-- **3 secoes de filmes** -- Popular, Now Playing e Upcoming com scroll horizontal independente
-- **+100 filmes catalogados** -- com poster, backdrop, sinopse e avaliacao
-- **Tela de detalhes** -- backdrop, poster, rating, generos, data de lancamento e sinopse completa
-- **Navegacao por segue** -- transicao fluida entre catalogo e detalhes
-- **Design imersivo** -- interface com fundo azul e cards arredondados
-- **Layout responsivo** -- Auto Layout com UICollectionView adaptavel a diferentes telas
+- **3 secoes de filmes** -- Popular, Now Playing e Upcoming com scroll horizontal
+- **Navegacao por genero** -- tab dedicada com cards por genero e contagem de filmes
+- **See All** -- grid completo de filmes ao tocar "See all" em qualquer secao
+- **Tela de detalhes** -- backdrop, poster, rating, generos, data e sinopse
+- **+100 filmes catalogados** -- com poster, backdrop e informacoes completas
+- **Tab bar intuitiva** -- Featured e Generos com icones visiveis e feedback visual
 
 ---
 
 ## Tecnologias
 
 - **Swift** -- linguagem principal do desenvolvimento
-- **UIKit** -- construcao de toda a interface com Storyboard e ViewCode
-- **UICollectionView** -- tres collection views horizontais independentes para cada secao
-- **Auto Layout** -- constraints para layout responsivo em diferentes dispositivos
-- **MVC** -- arquitetura Model-View-Controller com extensoes para DataSource e Delegate
-- **Segues** -- navegacao entre telas via Storyboard
+- **UIKit** -- interface com Storyboard e ViewCode combinados
+- **UICollectionView** -- collection views horizontais e grids programaticos
+- **Auto Layout** -- constraints para layout responsivo
+- **MVC** -- arquitetura com extensoes para DataSource e Delegate
+- **UITabBarController** -- navegacao entre secoes com tab bar customizada
+- **UINavigationController** -- hierarquia de navegacao com large titles
 
 ---
 
 ## Arquitetura
-
-O projeto segue o padrao **MVC** com extensoes separadas para DataSource e Delegate.
 
 ```
 Encontre_Aqui/
@@ -71,13 +70,16 @@ Encontre_Aqui/
 │   ├── FeaturedViewController.swift             ← tela principal
 │   ├── FeaturedViewController+DataSource.swift  ← populacao das cells
 │   ├── FeaturedViewController+Delegate.swift    ← selecao e navegacao
-│   └── DetailsViewController.swift              ← tela de detalhes
+│   ├── DetailsViewController.swift              ← tela de detalhes
+│   ├── SeeAllViewController.swift               ← grid de todos os filmes
+│   └── GenresViewController.swift               ← navegacao por genero
 ├── View/
 │   ├── PopularCollectionViewCell.swift           ← cell backdrop grande
 │   ├── NowplayingCollectionViewCell.swift        ← cell poster + ano
 │   ├── UpcomingCollectionViewCell.swift           ← cell poster + ano
-│   └── Base.lproj/
-│       └── Main.storyboard                       ← layout principal
+│   ├── SeeAllCell.swift                          ← cell do grid See All
+│   ├── GenreCell.swift                           ← card de genero
+│   └── Base.lproj/Main.storyboard               ← layout principal
 └── Assets.xcassets/                              ← 100+ posters e backdrops
 ```
 
