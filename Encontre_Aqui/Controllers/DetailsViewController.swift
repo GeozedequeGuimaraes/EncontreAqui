@@ -1,40 +1,35 @@
 import UIKit
 
 class DetailsViewController: UIViewController {
-    
+
     @IBOutlet var backdropImage: UIImageView!
     @IBOutlet var titleLabel: UILabel!
     @IBOutlet var posterImage: UIImageView!
     @IBOutlet var ratingLabel: UILabel!
-    @IBOutlet var genresLabel: UILabel!
-    @IBOutlet var timeLabel: UILabel!
     @IBOutlet var overviewLabel: UILabel!
-    
+
     var movie: Movie?
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         backdropImage.layer.borderWidth = 1
         backdropImage.layer.borderColor = UIColor.white.cgColor
         backdropImage.layer.cornerRadius = 10.0
+        backdropImage.clipsToBounds = true
         posterImage.layer.borderWidth = 1
         posterImage.layer.borderColor = UIColor.white.cgColor
         posterImage.layer.cornerRadius = 8.0
-        
+        posterImage.clipsToBounds = true
+
         guard let movie = movie else {
             return
         }
         self.title = movie.title
-        self.backdropImage.image = UIImage(named: movie.backdrop)
+        backdropImage.image = UIImage(named: movie.backdrop)
         titleLabel.text = movie.title
         posterImage.image = UIImage(named: movie.poster)
-        ratingLabel.text = "Rating: \(String(format: "%.1f", movie.voteAverage))/10"
-        genresLabel.text = movie.genres.joined(separator: ", ")
-        timeLabel.text = movie.releaseDate
+        ratingLabel.text = "\(String(format: "%.1f", movie.voteAverage))/10 · \(movie.releaseDate.prefix(4)) · \(movie.genres.joined(separator: ", "))"
         overviewLabel.text = movie.overview
-
-        backdropImage.clipsToBounds = true
-        posterImage.clipsToBounds = true
     }
-    
+
 }
