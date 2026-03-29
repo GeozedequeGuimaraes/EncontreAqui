@@ -395,6 +395,9 @@
                         <outlet property="nowPlayingCollectionView" destination="n85-uU-koy" id="CTK-rv-MeM"/>
                         <outlet property="popularCollectionView" destination="SWD-E2-Xxm" id="AnJ-3G-9As"/>
                         <outlet property="upcomingCollectionView" destination="owe-ab-kcl" id="MNi-wl-JJf"/>
+                        <outlet property="seeAllPopularButton" destination="FCY-H7-QfT" id="sa1-pop-btn"/>
+                        <outlet property="seeAllNowPlayingButton" destination="gZZ-Pm-ZN3" id="sa2-now-btn"/>
+                        <outlet property="seeAllUpcomingButton" destination="Xch-4N-6bd" id="sa3-upc-btn"/>
                         <segue destination="AnY-xF-eFE" kind="show" identifier="detailsSegue" id="Clu-Is-CfQ"/>
                     </connections>
                 </viewController>
@@ -405,7 +408,7 @@
         <!--lucas-->
         <scene sceneID="EuV-B4-ROz">
             <objects>
-                <viewController id="AnY-xF-eFE" customClass="DetailsViewController" customModule="Encontre_Aqui" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailsViewController" id="AnY-xF-eFE" customClass="DetailsViewController" customModule="Encontre_Aqui" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nmW-cT-v21">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="1233"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
