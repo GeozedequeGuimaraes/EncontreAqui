@@ -22,95 +22,95 @@ Encontre Aqui e um catalogo de filmes para iOS com mais de 100 titulos em tres s
 
 <div align="center">
 <img src="Screenshots/demo.gif" width="300" alt="Demo do app">
-</div>div>
+</div>
 
 ---
 
 ## Funcionalidades
 
 - Tres secoes de filmes (Popular, Now Playing, Upcoming) com scroll horizontal
-- - Navegacao por genero com tab dedicada, cards por genero e contagem de filmes
-  - - Grid completo ao tocar "See all" em qualquer secao
-    - - Tela de detalhes com backdrop, poster, rating, generos, data e sinopse
-      - - Mais de 100 filmes catalogados com poster e backdrop
-      - Tab bar com as abas Featured e Generos
-     
-      - ---
+- Navegacao por genero com tab dedicada, cards por genero e contagem de filmes
+- Grid completo ao tocar "See all" em qualquer secao
+- Tela de detalhes com backdrop, poster, rating, generos, data e sinopse
+- Mais de 100 filmes catalogados com poster e backdrop
+- Tab bar com as abas Featured e Generos
 
-      ## Tecnologias
+---
 
-      - Swift
-      - - UIKit com Storyboard e ViewCode combinados
-        - - UICollectionView com scroll horizontal e grids programaticos
-          - - Auto Layout
-            - - MVC com extensoes para DataSource e Delegate
-              - - UITabBarController e UINavigationController com large titles
-               
-                - ---
+## Tecnologias
 
-                ## Arquitetura
+- Swift
+- UIKit com Storyboard e ViewCode combinados
+- UICollectionView com scroll horizontal e grids programaticos
+- Auto Layout
+- MVC com extensoes para DataSource e Delegate
+- UITabBarController e UINavigationController com large titles
 
-                ```
-                Encontre_Aqui/
-                ├── Model/
-                │   ├── Movie.swift
-                │   ├── Movie+Popular.swift
-                │   ├── Movie+NowPlaying.swift
-                │   ├── Movie+Upcoming.swift
-                │   ├── Movie+TrendingThisWeek.swift
-                │   └── Movie+TrendingToday.swift
-                ├── Controllers/
-                │   ├── FeaturedViewController.swift
-                │   ├── FeaturedViewController+DataSource.swift
-                │   ├── FeaturedViewController+Delegate.swift
-                │   ├── DetailsViewController.swift
-                │   ├── SeeAllViewController.swift
-                │   └── GenresViewController.swift
-                ├── View/
-                │   ├── PopularCollectionViewCell.swift
-                │   ├── NowplayingCollectionViewCell.swift
-                │   ├── UpcomingCollectionViewCell.swift
-                │   ├── SeeAllCell.swift
-                │   ├── GenreCell.swift
-                │   └── Base.lproj/Main.storyboard
-                └── Assets.xcassets/
-                ```
+---
 
-                ---
+## Arquitetura
 
-                ## Como executar
+```
+Encontre_Aqui/
+├── Model/
+│   ├── Movie.swift
+│   ├── Movie+Popular.swift
+│   ├── Movie+NowPlaying.swift
+│   ├── Movie+Upcoming.swift
+│   ├── Movie+TrendingThisWeek.swift
+│   └── Movie+TrendingToday.swift
+├── Controllers/
+│   ├── FeaturedViewController.swift
+│   ├── FeaturedViewController+DataSource.swift
+│   ├── FeaturedViewController+Delegate.swift
+│   ├── DetailsViewController.swift
+│   ├── SeeAllViewController.swift
+│   └── GenresViewController.swift
+├── View/
+│   ├── PopularCollectionViewCell.swift
+│   ├── NowplayingCollectionViewCell.swift
+│   ├── UpcomingCollectionViewCell.swift
+│   ├── SeeAllCell.swift
+│   ├── GenreCell.swift
+│   └── Base.lproj/Main.storyboard
+└── Assets.xcassets/
+```
 
-                1. Clone o repositorio:
-               
-                2. ```bash
-                   git clone https://github.com/GeozedequeGuimaraes/EncontreAqui.git
-                   ```
+---
 
-                   2. Abra `Encontre_Aqui.xcodeproj` no Xcode
-                   3. 3. Selecione um simulador ou dispositivo fisico (iOS 15.5+)
-                      4. 4. Execute com `Cmd + R`
-                        
-                         5. ---
-                        
-                         6. ## Screenshots
-                        
-                         7. <div align="center">
+## Como executar
 
-                         | Catalogo | Ver todos | Detalhes | Generos |
-                         |:---:|:---:|:---:|:---:|
-                         | <img src="Screenshots/home.png" width="180"> | <img src="Screenshots/seeall.png" width="180"> | <img src="Screenshots/details.png" width="180"> | <img src="Screenshots/genres.png" width="180"> |
+1. Clone o repositorio:
 
-                         </div>
+```bash
+git clone https://github.com/GeozedequeGuimaraes/EncontreAqui.git
+```
 
-                         ---
+2. Abra `Encontre_Aqui.xcodeproj` no Xcode
+3. Selecione um simulador ou dispositivo fisico (iOS 15.5+)
+4. Execute com `Cmd + R`
 
-                         ## Autor
+---
 
-                         <div align="center">
+## Screenshots
 
-                         Geozedeque Guimaraes — Estudante de Ciencia da Computacao, CIn-UFPE
+<div align="center">
 
-                         [![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/GeozedequeGuimaraes)
-                         [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/geozedeque-guimaraes)
+| Catalogo | Ver todos | Detalhes | Generos |
+|:---:|:---:|:---:|:---:|
+| <img src="Screenshots/home.png" width="180"> | <img src="Screenshots/seeall.png" width="180"> | <img src="Screenshots/details.png" width="180"> | <img src="Screenshots/genres.png" width="180"> |
 
-                         </div>
+</div>
+
+---
+
+## Autor
+
+<div align="center">
+
+Geozedeque Guimaraes — Estudante de Ciencia da Computacao, CIn-UFPE
+
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/GeozedequeGuimaraes)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/geozedeque-guimaraes)
+
+</div>
